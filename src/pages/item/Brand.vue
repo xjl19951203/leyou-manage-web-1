@@ -105,8 +105,10 @@
             key: this.search, // 搜索条件
             page: this.pagination.page,// 当前页
             rows: this.pagination.rowsPerPage,// 每页大小
+            // rows: this.pagination.rows,// 每页大小
             sortBy: this.pagination.sortBy,// 排序字段
             desc: this.pagination.descending// 是否降序
+            // desc: this.pagination.desc// 是否降序
           }
         }).then(resp => { // 这里使用箭头函数
           this.brands = resp.data.items;
